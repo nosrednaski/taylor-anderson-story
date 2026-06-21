@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Director | Live Your Dream: The Taylor Anderson Story</title>
+  <meta name="description" content="About the director of Live Your Dream: The Taylor Anderson Story.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <ul id="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html#about">The Film</a></li>
+      <li><a href="for-teachers.html">For Teachers</a></li>
+      <li><a href="the-director.html" class="active">The Director</a></li>
+      <li><a href="the-andersons.html">The Andersons</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="event-photos.html">Event Photos</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <header class="page-header">
+    <h1>The Director</h1>
+    <p>The vision behind the film.</p>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="director-card">
+        <img src="images/director.jpg" alt="The Director">
+        <div>
+          <p class="eyebrow" style="text-transform:uppercase;letter-spacing:0.2em;color:var(--gold);font-weight:700;font-size:0.8rem;">Filmmaker</p>
+          <h2>Telling Taylor's Story</h2>
+          <p>Information about the director coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html#about">The Film</a>
+      <a href="for-teachers.html">For Teachers</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="#">Order the Film</a>
+    </div>
+    <p>&copy; 2012 Live Your Dream: The Taylor Anderson Story. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var open = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open);
+        });
+      }
+    })();
+  </script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>

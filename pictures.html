@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pictures | Live Your Dream: The Taylor Anderson Story</title>
+  <meta name="description" content="Post-tsunami images of Ishinomaki, where Taylor Anderson taught English.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <ul id="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html#about">The Film</a></li>
+      <li><a href="for-teachers.html">For Teachers</a></li>
+      <li><a href="the-director.html">The Director</a></li>
+      <li><a href="the-andersons.html">The Andersons</a></li>
+      <li><a href="pictures.html" class="active">Pictures</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="event-photos.html">Event Photos</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <header class="page-header">
+    <h1>Check Out These Pictures!</h1>
+    <p>Post-tsunami images of Ishinomaki.</p>
+  </header>
+
+  <section>
+    <div class="container narrow">
+      <p>Taylor Anderson taught English in seven Ishinomaki schools as part of the JET programme. She lived in an apartment near Hiyoriyama 日和山 and enjoyed Hanami 花見, walking, relaxing and the lovely view with her friends here.</p>
+    </div>
+    <div class="container" style="margin-top:1.5rem;">
+      <div class="pictures-stack">
+        <figure class="fig fig-full" data-lightbox>
+          <img src="images/ishinomaki1.jpg" alt="Surviving home in Ishinomaki">
+          <figcaption>
+            <strong>Surviving Home in Ishinomaki</strong>
+            <span>One of the few private homes at low elevation that survived the tsunami.</span>
+          </figcaption>
+        </figure>
+        <figure class="fig fig-full" data-lightbox>
+          <img src="images/ishinomaki2.jpg" alt="Kashimamiko jinjya shrine">
+          <figcaption>
+            <strong>Kashimamiko jinjya 鹿島御児神</strong>
+            <span>View from the Kashimamiko jinjya 鹿島御児神社 at Hiyoriyama 日和山.</span>
+          </figcaption>
+        </figure>
+        <figure class="fig fig-full" data-lightbox>
+          <img src="images/ishinomaki3.jpg" alt="Hiyoriyama view over Ishinomaki">
+          <figcaption>
+            <strong>Hiyoriyama 日和山</strong>
+            <span>View from one of Taylor's favorite places called Hiyoriyama 日和山 looking out over Ishinomaki. Many of the buildings are gone and the debris has been cleared.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html#about">The Film</a>
+      <a href="for-teachers.html">For Teachers</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="#">Order the Film</a>
+    </div>
+    <p>&copy; 2012 Live Your Dream: The Taylor Anderson Story. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var open = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open);
+        });
+      }
+    })();
+  </script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Teachers | Live Your Dream: The Taylor Anderson Story</title>
+  <meta name="description" content="Free downloadable teacher's guide for showing Live Your Dream: The Taylor Anderson Story in the classroom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <ul id="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html#about">The Film</a></li>
+      <li><a href="for-teachers.html" class="active">For Teachers</a></li>
+      <li><a href="the-director.html">The Director</a></li>
+      <li><a href="the-andersons.html">The Andersons</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="event-photos.html">Event Photos</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <header class="page-header">
+    <h1>For Teachers</h1>
+    <p>Resources for bringing Taylor's story into the classroom.</p>
+  </header>
+
+  <section>
+    <div class="container narrow">
+      <p>For teachers who plan to show <em>"Live Your Dream: The Taylor Anderson Story"</em> in their classrooms, the free, downloadable teacher's guide that was produced by Dr. Gary Mukai, Director of the Stanford Program on International Cross-Cultural Education (SPICE) at Stanford University, is highly recommended.</p>
+      <p>Thank you for your interest!</p>
+      <p style="margin-top:2rem;">
+        <a href="assets/docs/teacher-guide.pdf" class="btn" target="_blank" rel="noopener">Download Study Guide</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html#about">The Film</a>
+      <a href="for-teachers.html">For Teachers</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="#">Order the Film</a>
+    </div>
+    <p>&copy; 2012 Live Your Dream: The Taylor Anderson Story. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var open = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open);
+        });
+      }
+    })();
+  </script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>

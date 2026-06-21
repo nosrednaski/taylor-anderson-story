@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews | Live Your Dream: The Taylor Anderson Story</title>
+  <meta name="description" content="Press coverage and reviews of Live Your Dream: The Taylor Anderson Story.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <ul id="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html#about">The Film</a></li>
+      <li><a href="for-teachers.html">For Teachers</a></li>
+      <li><a href="the-director.html">The Director</a></li>
+      <li><a href="the-andersons.html">The Andersons</a></li>
+      <li><a href="pictures.html">Pictures</a></li>
+      <li><a href="reviews.html" class="active">Reviews</a></li>
+      <li><a href="event-photos.html">Event Photos</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+
+  <header class="page-header">
+    <h1>Live Your Dream Reviews</h1>
+    <p>Press coverage, articles, and letters about the film and Taylor's story.</p>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="reviews-grid">
+        <a href="#" class="review-tile"><div><div class="name">Richmond Magazine</div><div class="meta">Feature</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">St. Catherine's School</div><div class="meta">Feature</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Kickstarter</div><div class="meta">Campaign</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">RVA Magazine</div><div class="meta">Feature</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Education About Asia</div><div class="meta">Review &middot; Oct 2013</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Letter from Ambassador Fujisaki</div><div class="meta">Letter</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Letter from Ambassador Roos</div><div class="meta">Letter</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Japan Today</div><div class="meta">Article</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">JQ Magazine</div><div class="meta">Review &middot; March 2013</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Asahi Shimbun</div><div class="meta">Article</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Letter from Ambassador Kennedy</div><div class="meta">Letter</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">US Frontline</div><div class="meta">Interview &middot; June 5 2015</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Stars and Stripes</div><div class="meta">Article</div></div><div class="read">Read &rarr;</div></a>
+        <a href="#" class="review-tile"><div><div class="name">Emerson College</div><div class="meta">Article</div></div><div class="read">Read &rarr;</div></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="index.html#about">The Film</a>
+      <a href="for-teachers.html">For Teachers</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="#">Order the Film</a>
+    </div>
+    <p>&copy; 2012 Live Your Dream: The Taylor Anderson Story. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var menu = document.getElementById('nav-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var open = menu.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open);
+        });
+      }
+    })();
+  </script>
+  <script src="js/lightbox.js"></script>
+</body>
+</html>
