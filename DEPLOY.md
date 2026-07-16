@@ -140,5 +140,3 @@ aws cloudfront create-invalidation \
 
 - A custom domain requires an ACM certificate **in us-east-1** plus a Route 53
   (or other DNS) record aliased to the CloudFront distribution.
-- The `.avif` hero images are widely supported in modern browsers; CloudFront
-  serves them as-is. `.jpg`/`.png` fallbacks exist for the other imagery.
