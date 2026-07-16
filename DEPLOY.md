@@ -44,13 +44,13 @@ Run from the repo root. `aws s3 sync` walks subdirectories and preserves the
 ```bash
 # Long-cache the static assets (images, css, pdf)
 aws s3 sync . "s3://$BUCKET/" \
-  --exclude "*.html" --exclude "DEPLOY.md" \
+  --exclude ".git/*" --exclude "*.html" --exclude "DEPLOY.md" \
   --cache-control "public, max-age=31536000, immutable" \
   --profile "$PROFILE"
 
 # Short-cache the HTML so content updates appear quickly
 aws s3 sync . "s3://$BUCKET/" \
-  --exclude "*" --include "*.html" \
+  --exclude ".git/*" --exclude "*" --include "*.html" \
   --cache-control "public, max-age=300" \
   --content-type "text/html" \
   --profile "$PROFILE"
