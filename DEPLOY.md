@@ -38,12 +38,10 @@ aws s3 website "s3://$BUCKET/" \
 
 ## 3. Upload all files (preserving directory structure)
 
-Run from inside the `productionSite/` directory. `aws s3 sync` walks
-subdirectories and preserves the `css/`, `images/`, and `assets/` paths.
+Run from the repo root. `aws s3 sync` walks subdirectories and preserves the
+`css/`, `images/`, and `assets/` paths.
 
 ```bash
-cd productionSite
-
 # Long-cache the static assets (images, css, pdf)
 aws s3 sync . "s3://$BUCKET/" \
   --exclude "*.html" --exclude "DEPLOY.md" \
@@ -135,9 +133,8 @@ aws cloudfront create-invalidation \
 
 ## Quick redeploy checklist
 
-1. `cd productionSite`
-2. Re-run both `aws s3 sync` commands (step 3)
-3. Run the CloudFront invalidation (step 6)
+1. Re-run both `aws s3 sync` commands (step 3) from the repo root
+2. Run the CloudFront invalidation (step 6)
 
 ## Notes
 
